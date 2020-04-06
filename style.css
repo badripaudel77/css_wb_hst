@@ -1,14 +1,11 @@
 *{
-
 	box-sizing: border-box;
 }
 
 /* header section */
-
 .heading_section {
-
 	width: 100%; 
-	/* optional by default block level elements use 100 percent*/
+	/*optional by default block level elements use 100 percent*/
 	background-color: black;
 	padding: 7px 14px;
 }
@@ -20,7 +17,6 @@
 }
 
 .list_items {
-
 	list-style-type: none;
     margin: 15px;
 }
@@ -35,6 +31,7 @@
   color: orange;
 }
 /* make nav menu fixed  */
+
 .heading_section {
   position: fixed;
    margin-top: -25px;
@@ -47,9 +44,7 @@
 
 .navbar {
 	display: inline-block;
-	
 	vertical-align: middle;
-
 }
 
 .brand_header img {
@@ -63,13 +58,17 @@
  }
 
 .list_item__sec{
-
 background: red;
 border-radius: 3px;
 color : white;
 font-weight: bold;	
 }
 
+   /* #show_page {
+	background-image: url("./images/backimg.jpeg");
+	   /* background: url("./images/backimg.jpeg");
+    */
+} */
 
  #show_page > img{
  	min-height: 200px;
