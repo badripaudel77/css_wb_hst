@@ -1,0 +1,65 @@
+h1{
+    background-color: blue;
+    color:white;
+    padding:15px;
+}
+
+.grid-container {
+    /* display grid */
+    display: grid;
+
+    /*
+     defines the no of columns and corresponding width
+     */
+
+    /* 
+        first takes 135px, second takes the 25%of container width
+        and third and fourth take the remaining in which the fourth 
+        takes the twice as much as the third one.
+    */
+    grid-template-columns: 30% 25% 1fr 2fr; 
+    /* grid-template-rows: 200px 100px; */
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+
+    margin-top:-10px ;
+}
+.grid-container > div {
+
+      background-color: blue;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+
+.grid-item {
+    background-color: blue;
+    text-align: center;
+    border-right: 2px solid orange ;
+    /* height: 135px; */
+    height: auto;
+    vertical-align: middle;
+}
+
+
+.one {
+    grid-row: 1 / 4;
+}
+
+.four {
+    /* 
+        The grid-area property can be used as a shorthand property for the
+        grid-row-start, grid-column-start, grid-row-end 
+        and the grid-column-end properties. 
+    */
+  grid-area: 1 / 4 / 4 / 4;
+}
+
+ .seven {
+    grid-column: 2/ 4;
+} 
+
+.eight {
+    grid-column: 1 / 5;
+}
+
