@@ -1,0 +1,61 @@
+h2 {
+   text-align: center;
+}
+
+.transformed {
+    width: 400px;
+    height: 400px;
+    border: 2px orange solid;
+    margin:auto;
+    margin-top: 65px;
+    overflow: hidden; /* if something goes out of the div , it crops */
+}
+
+.transformed p {
+    text-align: center;
+    padding-top: 20px;
+    color: green;
+    font-size: large;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    height: 300px;
+    width: 300px;
+    margin-left: 35rem;
+   
+}
+
+.transitioned {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    text-align: center;
+    padding-top: 34px;
+    border: 2px dashed blue;
+
+    /* introduce transition */
+    transition: width 3s , height 3s;
+}
+.transitioned:hover {
+      height: 200px;
+      width: 200px;
+      background-color: red;
+}
+
+button {
+    background-color: blue;
+    color :whitesmoke;
+    padding :7px;
+
+    transform: rotateZ(20deg) translateX(15.3rem) translateY(-11rem) scaleX(1.2) ; 
+    transform-origin: 20%;
+    /* /*equivalent to rotate(45deg) */
+
+    /* use the transition property */
+}
+
+button:hover {
+    padding:14px;
+}
